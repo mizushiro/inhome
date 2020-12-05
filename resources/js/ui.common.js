@@ -9,14 +9,14 @@
 
 			$plugins.uiAjax({ 
 				id:'baseHeader', 
-				url:'/jipkok/html/inc/header.html', 
+				url:'../html/inc/header.html', 
 				page:true, 
 				callback:$plugins.common.header 
 			});
 
 			$plugins.uiAjax({ 
 				id:'baseNav', 
-				url:'/jipkok/html/inc/nav.html', 
+				url:'../html/inc/nav.html', 
 				page:true, 
 				callback:$plugins.common.header 
 			});
