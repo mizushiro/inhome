@@ -70,6 +70,10 @@
 		;(function($, win, doc, undefined) {
 			$(doc).ready(function() {
 				$plugins.common.init();
+
+				$('.btn-edit').on('click', function(){
+					location.href = '../html/mypage_address.html'
+				});
 			});
 		})(jQuery, window, document);
 	</script>
