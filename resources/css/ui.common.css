@@ -203,7 +203,7 @@ input[type="checkbox"] {opacity:0; filter:alpha(opacity=0); display:inline-block
 .lb-radio,
 .lb-check {position:relative; display:inline-flex; vertical-align:top; align-items:center; min-height:40px; font-size:13px; padding:0; margin:0; cursor:pointer; line-height:1;}
 .lb-radio:before,
-.lb-check:before {content:""; display:block; flex:0; min-width:20px; min-height:20px; margin-right:5px; box-sizing:border-box; border:2px solid #333; transition:box-shadow 0.5s, border 0.3s;}
+.lb-check:before {content:""; display:block; flex:0; min-width:20px; min-height:20px; margin-right:5px; box-sizing:border-box; border:2px solid #333; transition:box-shadow 0.5s, border 0.3s, background .3s;}
 .lb-radio:before {border-radius:50%;}
 .lb-check:before {border-radius:3px;}
 :checked + .lb-radio:before,
@@ -238,7 +238,7 @@ input[type="checkbox"] {opacity:0; filter:alpha(opacity=0); display:inline-block
 textarea.inp-base{padding:10px; height:100px;}
 /* select */
 select {display:inline-block; position:relative; vertical-align:top; width:auto; height:40px; padding:0 40px 0 10px; border-radius:2px; 
-background:#fff url(/jipkok/resources/img/common/ico_form.png) no-repeat 100% -106px; background-size:200px 200px; appearance:none; -moz-appearance:none; -webkit-appearance:none; border:1px solid #c9c9c9; font-size:14px; cursor:pointer;}
+background:#fff url(../img/common/ico_form.png) no-repeat 100% -106px; background-size:200px 200px; appearance:none; -moz-appearance:none; -webkit-appearance:none; border:1px solid #c9c9c9; font-size:14px; cursor:pointer;}
 select::-ms-expand {display:none;}
 select optgroup,
 select option {font-style:normal; background-color:#fff; font-size:13px;}

@@ -25,58 +25,72 @@
 		<header class="base-header" id="baseHeader"></header>
 		<div class="base-body" id="baseBody">
 			<main class="base-main" id="baseMain">
-				<!-- content -->
+				
+				<section class="cont-area fix-space">
+					<div class="call-tit n1">
+						<em>선택한 작업</em>
+						<b class="tit">생활 편의 &gt; 싱크대</b>
+						<span class="date">싱크대입스, 배수구교체/교체</span>
+					</div>
+					<fieldset class="field-step">
+						<legend>요청내용</legend>
+						<div class="field-row">
+							<h3>
+								<b>Step 1</b>
+								어떤 문제를 해결하고 싶으신가요?
+							</h3>
+							<textarea rows="4" placeholder="요청사항은 100자 이내로 작성해 주세요."></textarea>
+						</div>
+	
+						<div class="field-row">
+							<h3>
+								<b>Step 2</b>
+								현장사진이 있다면 첨부해 주세요.
+								<span>수리홈즈가 문제점을 파악하는데 큰 도움이 됩니다.</span>
+							</h3>
+							<input type="checkbox" id="ckb3_1">
+							<label for="ckb3_1" class="lb-check">작업 현장 사진 촬영 및 이용에 동의합니다. <b class="hue-p">(필수)</b></label>
+							<div>
+								<button type="button" class="btn-round type-photo"><span>사진올리기</span></button>
+							</div>
+						</div>
 
-				<ul class="list-round">
-					<li class="n1">
-						<button type="button">
-							<span>싱크대</span>
-						</button>
-					</li>
-					<li class="n2">
-						<button type="button">
-							<span>유리시공</span>
-						</button>
-					</li>
-					<li class="n3">
-						<button type="button">
-							<span>창호 서비스</span>
-						</button>
-					</li>
-					<li class="n4">
-						<button type="button">
-							<span>하수구 서비스</span>
-						</button>
-					</li>
-					<li class="n5">
-						<button type="button">
-							<span>전기/조명 서비스</span>
-						</button>
-					</li>
-					<li class="n6">
-						<button type="button">
-							<span>욕실 서비스</span>
-						</button>
-					</li>
-					<li class="n7">
-						<button type="button">
-							<span>현관문/현문</span>
-						</button>
-					</li>
-					<li class="n8">
-						<button type="button">
-							<span>방문 보수 및 시공</span>
-						</button>
-					</li>
-					<li class="n9">
-						<button type="button">
-							<span>방수/단열 공사</span>
-						</button>
-					</li>
-					<li class="n10"></li>
-				</ul>
+						<div class="field-row">
+							<h3>
+								<b>Step 3</b>
+								고객 정보를 입력해 주세요.
+								<span>현장 방문을 조율을 위해 정확한 연락처를 작성해 주세요.</span>
+							</h3>
+							<input type="tel" class="inp-base" placeholder="연락처를 입력해 주세요.">
+						</div>
 
-				<!-- //content -->
+						<div class="field-row">
+							<h3>
+								<b>Step 4</b>
+								현장 주소를 입력해 주세요.
+							</h3>
+							<div class="type-addrsearch">
+								<input typw="text" class="inp-base" placeholder="주소를 검색해주세요.">
+								<button type="button" class="btn-round">
+									<span>내 주소 목록</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="field-row">
+							<h3>
+								<b>Step 5</b>
+								작업 희망일을 입력해 주세요.
+								<span>일요일, 공휴일은 서비스가 불가능합니다. <br>
+									일정은 수리홈즈와 조율 후 변동될 수 있습니다.</span>
+							</h3>
+							<input type="date" class="inp-base" placeholder="희망 년월일을 선택해 주세요.">
+						</div>
+						
+					</fieldset>
+				</section>
+				
+
 			</main>
 		</div>
 		<section class="base-nav" id="baseNav"></section>
@@ -86,6 +100,18 @@
 		;(function($, win, doc, undefined) {
 			$(doc).ready(function() {
 				$plugins.common.init();
+
+				$('.list-round button').on('click', function(){
+					$plugins.uiModalOpen({ 
+						id:'modalCallOption', 
+						type: 'normal',
+						ps: 'bottom',
+						mg: 10,
+						callback:function() { console.log('open callback'); },
+						closeCallback:function() { console.log('close callback'); },
+						endfocus:false 
+					});
+				});
 			});
 		})(jQuery, window, document);
 	</script>
