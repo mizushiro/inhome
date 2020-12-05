@@ -134,7 +134,7 @@
 						<button type="button" class="btn-base type-denial" onclick="$plugins.uiModalClose({ id:'modalCallOption' })">
 								<span>취소</span>
 							</button>
-							<button type="button" class="btn-base">
+							<button type="button" class="btn-base" id="callNext">
 								<span>다음</span>
 							</button>
 						</div>
@@ -149,6 +149,10 @@
 		;(function($, win, doc, undefined) {
 			$(doc).ready(function() {
 				$plugins.common.init();
+
+				$('#callNext').on('click', function(){
+					location.href = '../html/call.html';
+				});
 
 				$('.list-round button').on('click', function(){
 					$plugins.uiModalOpen({ 

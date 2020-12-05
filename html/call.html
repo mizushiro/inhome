@@ -51,7 +51,10 @@
 							<input type="checkbox" id="ckb3_1">
 							<label for="ckb3_1" class="lb-check">작업 현장 사진 촬영 및 이용에 동의합니다. <b class="hue-p">(필수)</b></label>
 							<div>
+								
 								<button type="button" class="btn-round type-photo"><span>사진올리기</span></button>
+								<input type="file" accept="image/*;capture=camera" class="" id="photoFileUpload">
+
 							</div>
 						</div>
 
@@ -84,10 +87,28 @@
 								<span>일요일, 공휴일은 서비스가 불가능합니다. <br>
 									일정은 수리홈즈와 조율 후 변동될 수 있습니다.</span>
 							</h3>
-							<input type="date" class="inp-base" placeholder="희망 년월일을 선택해 주세요.">
+							<div class="type-date">
+								<input type="date" required pattern="\d{4}-\d{2}-\d{2}" class="inp-base" placeholder="희망 년월일을 선택해 주세요.">
+							</div>
+							<div class="type-time">
+								<input type="time" class="inp-base" placeholder="시간">
+							</div>
+						</div>
+
+						<div class="field-row line-b">
+							<h3>
+								<b>Step 6</b>
+								폐기물 처리 요청.(선택)
+							</h3>
+							<input type="checkbox" id="ckb4_1">
+							<label for="ckb4_1" class="lb-check">작업 후 폐기물이 발생하여 처리를 수리홈즈에 요청 시 추가비용 발생에 동의합니다.</label>
 						</div>
 						
 					</fieldset>
+
+					<div class="btn-footer">
+						<button type="button" class="btn-base"><span>작업 요청하기</span></button>
+					</div>
 				</section>
 				
 
@@ -101,17 +122,10 @@
 			$(doc).ready(function() {
 				$plugins.common.init();
 
-				$('.list-round button').on('click', function(){
-					$plugins.uiModalOpen({ 
-						id:'modalCallOption', 
-						type: 'normal',
-						ps: 'bottom',
-						mg: 10,
-						callback:function() { console.log('open callback'); },
-						closeCallback:function() { console.log('close callback'); },
-						endfocus:false 
-					});
+				$('.btn-round.type-photo').on('click', function(){
+					$('#photoFileUpload').trigger('click');
 				});
+				
 			});
 		})(jQuery, window, document);
 	</script>
