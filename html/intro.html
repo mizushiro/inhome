@@ -42,8 +42,8 @@
 				</div>
 
 				<div class="btn-footer">
-					<button type="button" class="btn-base"><span>건너뛰기</span></button>
-					<button type="button" class="btn-base"><span>다음</span></button>
+					<button type="button" class="btn-base" data-src="main"><span>건너뛰기</span></button>
+					<button type="button"  class="btn-base" data-src="next" ><span>다음</span></button>
 				</div>
 						  
 				<!-- //content -->
@@ -55,9 +55,29 @@
 		;(function($, win, doc, undefined) {
 			$(doc).ready(function() {
 				$plugins.common.init();
+				$('.btn-footer .btn-base').on('click', function(){
+					var src = this.getAttribute('data-fullText');
+
+					if (src === 'main') {
+						location.href = '../html/index.html';
+					} else {
+						$('.single-item').slick('slickNext');
+					}
+				});
+				
+				var curNum = null
+				$('.single-item').on('afterChange', function(event, slick, currentSlide){
+					if (curNum === currentSlide && currentSlide === 2) {
+						console.log(11111111)
+						location.href = '../html/index.html';
+					}
+					curNum = currentSlide;
+				});
+
 
 				$('.single-item').slick({
 					dots: true,
+					infinite: false,
 					arrows: false
 				});
 			});
