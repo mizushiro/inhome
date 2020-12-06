@@ -27,29 +27,101 @@
 			<main class="base-main" id="baseMain">
 				<!-- content -->
 				
-				<section class="subtit-area">
-					<h2 class="subtit-area-txt">
-						<b>프리미엄 토탈 홈케어 서비스</b>
-						<strong>출동 집콕!</strong>
-						<span>국내 유일 수리 보수 긴급 출동 서비스 전문회사</span>
-					</h2>
-					<img src="../resources/img/bg-mypage.jpg" alt="">
-				</section>
+				<div class="slogan">
+					<em>프리미엄 토탈 홈케어 서비스</em>
+					<strong>출동 집콕!</strong>
+					<span>국내 유일 수리 보수 긴급 출동 서비스 전문회사</span>
+				</div>
 
-				<section style="height:2000px; background:skyblue">
-					<h3>수리 걱정 없는 생활을 시작하세요.</h3>
-				</section>
+				<section class="cont-area">
+					<h2>수리 걱정 없는 생활을 시작하세요.</h2>
+					<p>접수를 위해 수리가 필요한 공간을 선택해 주세요.</p>
 
+					<ul class="list-main">
+						<li>
+							<a href="#">
+								<div class="photo">
+									<img src="../resources/img/main_1.jpg" alt="">
+								</div>
+								<span>생활편의</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="photo">
+									<img src="../resources/img/main_2.jpg" alt="">
+								</div>
+								<span>홈케어</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="photo">
+									<img src="../resources/img/main_3.jpg" alt="">
+								</div>
+								<span>스몰 인테리어</span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="main-txt">
+						<i>touch_app</i> <span>작업공간을 먼저 선택해 주세요!</span>
+					</div>
+
+					<ul class="list-review">
+						<li>
+							<a href="#">
+								<div class="photo">
+									<img src="../resources/img/dummy/@sample2.jpg" alt="모바일 접수로 편리하게 헤드망가짐 수전 교체">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="photo">
+									<img src="../resources/img/dummy/@sample2.jpg" alt="모바일 접수로 편리하게 헤드망가짐 수전 교체">
+								</div>
+							</a>
+						</li>
+
+					</ul>
+
+				</section>
 				<!-- //content -->
 			</main>
 		</div>
 		<section class="base-nav" id="baseNav"></section>
 	</div>
 
+	<section class="ui-modal type-alert" id="modalLogin" role="dialog" aria-hidden="true">
+		<div class="ui-modal-wrap">
+			<header class="ui-modal-header">
+				<h1 class="ui-modal-tit"><img src="../resources/img/logo-login.png"></h1>
+			</header>
+			<div class="ui-modal-cont">
+				<p>로그인 후 이용가능합니다.</p>
+			</div>
+			<div class="ui-modal-footer">
+				<div class="btn-wrap">
+					<button type="button" class="btn-base" id="callNext" onclick="location.href='../html/login.html';">
+						<span>확인</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<script>
 		;(function($, win, doc, undefined) {
 			$(doc).ready(function() {
 				$plugins.common.init();
+
+				$plugins.uiModalOpen({ 
+					id:'modalLogin', 
+					type: 'normal',
+					ps: 'center'
+				
+				});
 			});
 		})(jQuery, window, document);
 	</script>

@@ -254,9 +254,7 @@ select:focus{border-color:#000;}
 .btn-wrap.txta-r [class*="btn-base"]{margin-right:0; margin-left:10px;}
 /* button */
 [class*="btn-base"]{display:inline-block; padding:0 20px; min-height:40px; min-width:60px; border:1px solid #63686d; font-size:14px; text-align:center; background:#fff; vertical-align:top; color:#222; text-decoration:none; line-height:1;}
-div[class*="btn-base"],
-span[class*="btn-base"],
-a[class*="btn-base"]{padding:12px 20px 8px;}
+
 [class*="btn-base"] span{vertical-align:middle; display:inline-block; line-height:1; margin-top:-3px;}
 [class*="btn-base"]:hover,
 [class*="btn-base"]:focus{border:1px solid #000; background:#eee;}
