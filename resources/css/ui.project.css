@@ -32,7 +32,7 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 
 .base-wrap{padding:14vmin 0 17vmin;}
 .page-intro .base-wrap{padding:0;}
-.page-intro .base-wrap img{width:100%;}
+.page-intro .base-wrap img{width:100vmin; display: block; margin:0 auto;}
 .page-main .header-area .type-main{display:block; position:absolute; width:100%;}
 .page-join .header-area .type-mypage,
 .page-join .header-area .btn-home,
@@ -178,11 +178,6 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 .list-round .n9 button::before{background-image:url(../img/call_9.jpg);}
 
 .ui-modal-wrap{width:calc(100% - 4vmin); padding:3vmin 5vmin; border-radius:3vmin; overflow-y:auto; max-height:calc(100vmax - 20px);}
-@media (orientation: landscape) {
-	.ui-modal-wrap{max-height:calc(100vmin - 20px);}
-}
-
-
 .ui-modal-header{background:#fff; color:#222; padding:0 0 2vmin; height:auto;}
 
 .check-box.field-row{border-bottom:1px solid #ccc; padding:2vmin 0 4vmin;}
@@ -301,12 +296,28 @@ textarea{width:100%; border:0; font-size:3.4vmin; border-bottom:1px solid #ddd;}
 .type-alert .ui-modal-footer .btn-wrap{padding:0}
 .type-alert .ui-modal-footer .btn-base{width:100%;}
 
+.slick-dots{position:absolute; top:5vmin; left:0; width:100%; text-align:center;}
+.slick-dots li{width:5vw; display:inline-block;}
+.slick-dots li button{width:2.4vw; height:2.4vw; font-size:0;background:#cdcdcd; border-radius:50%;}
+.slick-dots .slick-active button{background:#c5c700;}
 
+.page-intro{background-color:#f6f5e8;  }
+.page-intro .base-wrap,
+.page-intro .base-body,
+.page-intro .single-item,
+.slick-list,
+.slick-track,
+.page-intro .base-main{height:100%;}
+.slick-slide{position: relative;}
+.page-intro .btn-footer{bottom:0; display:flex; justify-content:space-between; }
+.page-intro .btn-footer {background:#c5c700;}
+.page-intro .btn-footer .btn-base{width:auto; }
+.page-intro .btn-footer .btn-base::before{display:none;}
 
-
-
-
-
-
-
-
+@media (orientation: landscape) {
+	.ui-modal-wrap{max-height:calc(100vmin - 20px);}
+	.page-intro .base-wrap img{width:auto; height:100vmin;}
+	.slick-dots{top:1vmin;}
+	.slick-dots li {width:5vmin;}
+	.slick-dots li button{width:2vmin; height:2vmin}
+}
