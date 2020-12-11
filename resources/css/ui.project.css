@@ -228,11 +228,13 @@ textarea{width:100%; border:0; font-size:3.4vmin; border-bottom:1px solid #ddd;}
 .page-login .cont-area{text-align: center; padding:0 10vmin 10vmin}
 .page-login .cont-area h1{display:inline-block; width:40vmin; height:40vmin; background:#fff; border-radius:50%; text-align:center; padding-top:12vmin; margin:30vmin 0 20vmin; line-height:1;}
 .page-login .cont-area h1 img{width:70%;}
-.login-type{position: relative; width:100%;}
+.login-type{position: relative; width:100%; margin-bottom:20px;}
 .login-type li{margin-bottom:3vmin;}
-.login-type a{display:block; width:100%; background-color:#666; color:#fff; font-size:5vmin; text-align: center; padding:4vmin 0 3vmin; font-weight:600;}
-.login-type a::before{content:""; display:inline-block; width:5vw; vertical-align:middle; height:5vw; background:url(../img/login_k.png) no-repeat 50% 50% / 100%; margin-top:-1vmin;}
+.login-type a{display:block; width:100%; background-color:#c5c700; color:#fff; font-size:5vmin; text-align: center; padding:4vmin 0 3vmin; font-weight:600;}
+.login-type a::before{content:""; display:inline-block; width:5vw; vertical-align:middle; height:5vw; background:url(../img/login_k.png) no-repeat 50% 50% / 100%; margin-top:-1vmin; background-image:none;}
 .login-type .type-k a{background:#feec02; color:#3b1d1d;}
+.login-type .type-k a:after{background-image:url(../img/login_k.png); margin-top:-1vmin;}
+
 .login-type .type-n a::before{background-image:url(../img/login_n.png); margin-top:-1vmin;}
 .login-type .type-n a{background:#1ec800; color:#fff;}
 .login-type .type-g a::before{background-image:url(../img/login_g.png); margin-top:-1vmin;}
