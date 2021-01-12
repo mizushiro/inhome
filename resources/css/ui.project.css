@@ -72,7 +72,7 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 .btn-home::before{content:"home"; font-family: 'Material Icons'; display:block; font-size:8vmin; color:#c5c700;}
 .btn-edit{width:10vmin; height:10vmin; border-radius:50%; background:#c5c700; margin:0 0 0 1vmin; display: inline-block;}
 .btn-edit::before{content:"edit"; font-family: 'Material Icons'; display:block; font-size:6vmin; color:#fff}
-.btn-round{background:#999; color:#fff; font-size:3.4vmin; padding:2.2vmin 4vmin 2vmin; border-radius:6vmin}
+.btn-round{background:#999; color:#fff; font-size:3.4vmin; padding:1.2vmin 4vmin 1vmin; border-radius:6vmin}
 .btn-base{width:100%; background:#c5c700; color:#fff; font-size:5vmin; font-weight:500; border:0; padding:4.8vmin 4vmin 3.2vmin; height:auto}
 .btn-base::before{content:"done"; font-family: 'Material Icons'; display:inline-block; font-size:6vmin; color:#fff; vertical-align:middle; margin-right:1vmin; font-weight:600;}
 .btn-del{width:10vmin; height:10vmin; border-radius:50%; background:#999; margin:0 0 0 1vmin; display: inline-block;}
@@ -116,6 +116,19 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 
 .list-addr .none{text-align: center; font-size:5vmin; font-weight:500; padding:20vmin 0;}
 .list-addr .none::before{content:"place"; display:block; width:20vmin; height:20vmin; border-radius:50%; background:#c5c700; margin:0 auto 2vmin; font-family: 'Material Icons'; color:#fff; font-size:12vmin; line-height:20vmin;}
+
+.list-oper{position: relative; width:100%; }
+.list-oper li{width:100%; border-bottom:1px solid #ddd; position: relative; padding:5vmin 0}
+.list-oper .txt{padding-right:22vmin;}
+.list-oper .txt b{font-size:5vmin; font-weight:500; text-decoration:none; color:#222; padding:1vmin 0 0; display:block; position: relative; line-height:1.2}
+.list-oper .btn{position: absolute; right:0; top:50%; transform: translate(0 , -50%);}
+.list-oper .txt em{color:#666}
+.list-oper .txt > span{color:#aaa}
+
+.list-oper .none{text-align: center; font-size:5vmin; font-weight:500; padding:20vmin 0;}
+.list-oper .none::before{content:"assignment"; display:block; width:20vmin; height:20vmin; border-radius:50%; background:#c5c700; margin:0 auto 2vmin; font-family: 'Material Icons'; color:#fff; font-size:12vmin; line-height:20vmin;}
+.list-oper .btn-base::before{display:none;}
+.list-oper .btn-base{font-size:3vmin; padding:1.8vmin 4vmin 1.2vmin; border-radius: 0.5vmin;}
 
 .field-row{width:100%; margin-top:2vmin; position: relative;}
 .field-row + .field-row{margin-top:4vmin;}
@@ -316,6 +329,22 @@ textarea{width:100%; border:0; font-size:3.4vmin; border-bottom:1px solid #ddd;}
 .page-intro .btn-footer .btn-base{width:auto; }
 .page-intro .btn-footer .btn-base::before{display:none;}
 
+.oper-step{width:100%; position:relative; background:#f7f7f7; color:#222; text-align: center; padding:5vmin 0 5vmin;}
+.oper-step > strong{display:block; width:100%; font-size:4vmin; font-weight:600; margin:0 0 3vmin;}
+.oper-step li{display:inline-block; font-size:3vmin; padding:0 2.5vmin; color:#aaa;}
+.oper-step li::before{content:""; display:block; width:3vmin; height:3vmin; border-radius: 50%; background:#ddd; margin:0 auto 1vmin;}
+.oper-step::after{content: ""; display:block; width:60vmin; height:1px; background:#ddd; position: absolute; top:15.5vmin; left:50%; transform: translate(-50%, 0);}
+.oper-step li.selected{color:#c5c700; font-weight:600;}
+.oper-step li.selected::before{background-color:#c5c700; }
+
+.oper-detail{position: relative; width:100%;}
+.oper-detail dt{padding-bottom:4vmin}
+.oper-detail dt strong{color:#222; font-weight:600; font-size:5vmin; display:block;}
+.oper-detail dt span{display:inline-block; font-szie:3vmin; color:#aaa; margin-right:1.5vmin; vertical-align: middle;}
+.oper-detail dt span.div{font-size:2vmin;}
+.oper-detail dd{font-size:4vmin; color:#666;}
+.oper-detail .photo {display:flex; justify-content:space-between; flex-wrap:wrap; padding:4vmin 0}
+.oper-detail .photo img{flex:1; max-width:44vmin; margin-bottom:4vmin}
 @media (orientation: landscape) {
 	.ui-modal-wrap{max-height:calc(100vmin - 20px);}
 	.page-intro .base-wrap img{width:auto; height:100vmin;}

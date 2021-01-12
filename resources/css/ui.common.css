@@ -232,7 +232,7 @@ input[type="checkbox"] {opacity:0; filter:alpha(opacity=0); display:inline-block
 .lb-check.all span {padding-top:1px;}
 .lb-tit {display:inline-block; height:40px; margin-right:10px; padding-top:10px; vertical-align:top; cursor:pointer;}
 /* input */
-.inp-base {display:inline-block; vertical-align:top; width:100%; border:1px solid #c9c9c9; border-radius:2px; height:40px; padding:0 10px; outline:0; margin:0;}
+.inp-base {display:inline-block; vertical-align:top; width:100%; border:1px solid #c9c9c9; border-radius:2px; height:4vmin; padding:0 10px; outline:0; margin:0;}
 .inp-base:focus{border-color:#000;}
 .inp-base::-webkit-search-cancel-button{display:none;}
 textarea.inp-base{padding:10px; height:100px;}
