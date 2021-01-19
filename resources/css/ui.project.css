@@ -183,7 +183,8 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 .list-round{position: relative; overflow: hidden; margin:3vmin 0 ; display:flex; flex-wrap:wrap; justify-content:space-evenly;}
 .list-round li{display:block; flex:1; text-align: center;}
 .list-round li button{font-size:5.4vmin; margin:2vmin auto;}
-.list-round li button::before{content:""; display:block; width:40vmin; height:40vmin; background:url(../img/call_1.jpg) no-repeat 50% 50% / cover; border-radius:50%; margin-bottom:2vmin;}
+.list-round li button b{content:""; display:block; width:40vmin; height:40vmin; background:url(../img/call_1.jpg) no-repeat 50% 50% / cover; border-radius:50%; margin-bottom:2vmin;}
+/* .list-round li button::before{content:""; display:block; width:40vmin; height:40vmin; background:url(../img/call_1.jpg) no-repeat 50% 50% / cover; border-radius:50%; margin-bottom:2vmin;}
 .list-round .n1 button::before{background-image:url(../img/call_1.jpg);}
 .list-round .n2 button::before{background-image:url(../img/call_2.jpg);}
 .list-round .n3 button::before{background-image:url(../img/call_3.jpg);}
@@ -192,7 +193,7 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 .list-round .n6 button::before{background-image:url(../img/call_6.jpg);}
 .list-round .n7 button::before{background-image:url(../img/call_7.jpg);}
 .list-round .n8 button::before{background-image:url(../img/call_8.jpg);}
-.list-round .n9 button::before{background-image:url(../img/call_9.jpg);}
+.list-round .n9 button::before{background-image:url(../img/call_9.jpg);} */
 
 .ui-modal-wrap{width:calc(100% - 4vmin); padding:3vmin 5vmin; border-radius:3vmin; overflow-y:auto; max-height:calc(100vmax - 20px);}
 .ui-modal-header{background:#fff; color:#222; padding:0 0 2vmin; height:auto;}
