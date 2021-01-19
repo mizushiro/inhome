@@ -114,6 +114,10 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 .list-addr .btn{position: absolute; right:0; top:50%; transform: translate(0 , -50%);}
 .list-addr .txt em{color:#999}
 
+.list-addr.type-b .txt{padding-right:0;}
+.list-addr.type-b :checked + .txt{display:block;}
+.list-addr.type-b :checked + .txt b{color:#c5c700;}
+
 .list-addr .none{text-align: center; font-size:5vmin; font-weight:500; padding:20vmin 0;}
 .list-addr .none::before{content:"place"; display:block; width:20vmin; height:20vmin; border-radius:50%; background:#c5c700; margin:0 auto 2vmin; font-family: 'Material Icons'; color:#fff; font-size:12vmin; line-height:20vmin;}
 
@@ -132,7 +136,7 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 
 .field-row{width:100%; margin-top:2vmin; position: relative;}
 .field-row + .field-row{margin-top:4vmin;}
-.inp-base{width:100%; border:0; border-bottom:1px solid #ddd; font-size:4vmin; padding:3vmin 0; height:3.4min; border-radius:0; -webkit-appearance: none; -webkit-border-radius: 0;}
+.inp-base{width:100%; border:0; border-bottom:1px solid #ddd; font-size:4vmin; padding:3vmin 0; height:10vmin; border-radius:0; -webkit-appearance: none; -webkit-border-radius: 0;}
 
 .page-join .inp-base{background:transparent; border-bottom:1px solid #fff;}
 
@@ -192,6 +196,21 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 
 .ui-modal-wrap{width:calc(100% - 4vmin); padding:3vmin 5vmin; border-radius:3vmin; overflow-y:auto; max-height:calc(100vmax - 20px);}
 .ui-modal-header{background:#fff; color:#222; padding:0 0 2vmin; height:auto;}
+.ui-modal-wrap.type-fullbutton{padding:0;}
+.ui-modal-wrap.type-fullbutton .ui-modal-cont{padding:3vmin 5vmin;}
+.ui-modal-wrap.type-fullbutton .ui-modal-footer{padding:0;}
+.ui-modal-wrap.type-fullbutton .ui-modal-footer .btn-wrap{padding-bottom:0}
+.ui-modal-wrap.type-fullbutton .ui-modal-footer .btn-base{width:100%; border-radius:0; margin:0;}
+.ui-modal-wrap.type-fullbutton .ui-modal-footer .btn-base::before {
+    content: "done";
+    font-family: 'Material Icons';
+    display: inline-block;
+    font-size: 6vmin;
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 1vmin;
+    font-weight: 600;
+}
 
 .check-box.field-row{border-bottom:1px solid #ccc; padding:2vmin 0 4vmin;}
 .check-box h3{display:block; margin-bottom:1.6vmin; font-size:5vmin}
