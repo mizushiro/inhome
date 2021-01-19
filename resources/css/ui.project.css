@@ -371,3 +371,5 @@ textarea{width:100%; border:0; font-size:3.4vmin; border-bottom:1px solid #ddd;}
 	.slick-dots li {width:5vmin;}
 	.slick-dots li button{width:2vmin; height:2vmin}
 }
+
+.dd_photo_list img{width:100%; max-width:max-content;}
