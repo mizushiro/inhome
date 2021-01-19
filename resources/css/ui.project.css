@@ -168,7 +168,7 @@ input[type="file"]{ -webkit-appearance: none; background:transparent; font-size:
 .ui-acco.type-notice .ui-acco-pnl{padding:5vmin; font-size:4vmin;}
 .ui-acco.type-notice .ui-acco-btn:after {font-size:5vmin; margin:0; width:auto; height:auto; float:none; transform: translate(0, -50%);}
 
-.box-case{position: relative; width:calc(100% - 8vmin); margin:0 auto; background:#fff; box-shadow: 0 0 10px rgba(0,0,0,0.5); border-bottom-left-radius:4vmin; border-bottom-right-radius:4vmin; color:#666}
+.box-case{position: relative; width:calc(100% - 8vmin); margin:20px auto; overflow:hidden; background:#fff; box-shadow: 0 0 10px rgba(0,0,0,0.5); border-radius:4vmin; color:#666}
 .box-case .photo{overflow: hidden; border-bottom-left-radius:4vmin; border-bottom-right-radius:4vmin;}
 .box-case .photo img{width:100%; display:block;}
 .box-case figcaption{padding:4vmin;}
