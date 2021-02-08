@@ -64,7 +64,19 @@
 								고객 정보를 입력해 주세요.
 								<span>현장 방문을 조율을 위해 정확한 연락처를 작성해 주세요.</span>
 							</h3>
-							<input type="tel" class="inp-base" placeholder="연락처를 입력해 주세요.">
+							<div class="type-addrsearch">
+								<input type="tel" class="inp-base" placeholder="연락처를 입력해 주세요.">
+								<button type="button" class="btn-round">
+									<span>인증번호 발송</span>
+								</button>
+							</div>
+							<div class="type-addrsearch">
+								<input type="tel" class="inp-base" placeholder="인증번호를 입력해 주세요.">
+								<button type="button" class="btn-round">
+									<span>입력</span>
+								</button>
+							</div>
+							
 						</div>
 
 						<div class="field-row">
@@ -90,9 +102,19 @@
 							<div class="type-date">
 								<input type="date" required pattern="\d{4}-\d{2}-\d{2}" class="inp-base" placeholder="희망 년월일을 선택해 주세요.">
 							</div>
-							<div class="type-time">
-								<input type="time" class="inp-base" placeholder="시간">
+							<div class="ui-select">
+								<select>
+									<option>시간</option>
+								</select>
 							</div>
+							<div class="ui-select">
+								<select>
+									<option>분</option>
+								</select>
+							</div>
+							<!-- <div class="type-time">
+								<input type="time" class="inp-base" placeholder="시간">
+							</div> -->
 						</div>
 
 						<div class="field-row line-b">
