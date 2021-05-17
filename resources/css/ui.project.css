@@ -275,7 +275,7 @@ textarea{width:100%; border:0; font-size:3.4vmin; border-bottom:1px solid #ddd;}
 .page-login .cont-area h1 img{width:100%;}
 .login-type{position: relative; width:100%; margin-bottom:20px;}
 .login-type li{margin-bottom:3vmin;}
-.login-type a{display:block; width:100%; background-color:#c5c700; color:#fff; font-size:5vmin; text-align: center; padding:4vmin 0 3vmin; font-weight:600;}
+.login-type a{display:block; width:100%; background-color:#c5c700; color:#fff; font-size:5vmin; text-align: center; padding:4vmin 0 3vmin; font-weight:400;}
 .login-type a::before{content:""; display:none; width:5vw; vertical-align:middle; height:5vw; background:url(../img/login_k.png) no-repeat 50% 50% / 100%; margin-top:-1vmin; background-image:none;}
 .login-type .type-k a{background:#feec02; color:#3b1d1d;}
 .login-type .type-k a::before{display:inline-block; background-image:url(../img/login_k.png); margin-top:-1vmin;}
@@ -284,7 +284,8 @@ textarea{width:100%; border:0; font-size:3.4vmin; border-bottom:1px solid #ddd;}
 .login-type .type-n a{background:#1ec800; color:#fff;}
 .login-type .type-g a::before{display:inline-block; background-image:url(../img/login_g.png); margin-top:-1vmin;}
 .login-type .type-g a{background:#4285f4; color:#fff;}
-
+.login-type .type-a a::before{display:inline-block; background-image:url(../img/login_a.png); margin-top:-1vmin; width:3.5vw}
+.login-type .type-a a{background:#4285f4; color:#fff;}
 
 .login-type2 > *{color:#fff; font-weight:500; display:inline-block; vertical-align:middle; margin:0 5px; font-size:3.4vmin;}
 
